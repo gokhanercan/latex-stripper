@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="latex-stripper.js"></script>
+</head>
+<body>
+
+<textarea id="source" style="max-width: 100%; width: 100%;" rows="10">gokhan \textit{lin} ercan \footnote{ahmet}</textarea>
+<button id="convert">CONVERT</button>
+<textarea id="dest" style="max-width: 100%; width: 100%;" rows="10"></textarea>
+
+<script>
+    $( document ).ready(function() {
+        
+        $("#convert").click(function () {
+            var latex = $("#source").val();
+            latex = latex.replace(/\\/g, "\\\\");       //double the slashes you get from the screen
+            var res = ShallowStrip(latex);
+            $("#dest").text(res);
+        });
+
+    });
+    </script>
+
+</body>
+</html>
