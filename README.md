@@ -5,7 +5,7 @@ For example, I inject this script into Google Translate webpage via the followin
 https://chrome.google.com/webstore/detail/custom-javascript-for-web/ddbjnfjiigjmcpcpkmhogomapikjbjdk
 
 ### Example LATEX Input
-This is an \textit{italic} text.
+This is an \unsure{stunning} \textit{italic} text.
 
 ### RAW Output
 This is an italic text.
